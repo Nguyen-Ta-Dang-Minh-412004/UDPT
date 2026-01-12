@@ -42,7 +42,7 @@ PickleDB Distributed Todo System được thiết kế để giúp người dùn
     Di chuyển vào thư mục dự án đã clone:
 
     ```bash
-    cd pickle_DB
+    cd UDPT
     ```
 
 3.  **(Tuỳ chọn) Tạo môi trường ảo Python**:
