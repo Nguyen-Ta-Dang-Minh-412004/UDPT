@@ -8,7 +8,9 @@ from flask_cors import CORS
 from src.cluster_manager import ClusterManager
 
 def create_app(port, peers, all_nodes=None):
-    app = Flask(__name__, static_folder="../examples", static_url_path="/")
+    # Trỏ static_folder vào thư mục dashboard để phục vụ index.html, script.js, style.css
+    frontend_dir = os.path.join(os.path.dirname(__file__), "../node_dashboard")
+    app = Flask(__name__, static_folder=frontend_dir, static_url_path="/")
     CORS(app)
     
     # Load PickleDB
@@ -22,7 +24,7 @@ def create_app(port, peers, all_nodes=None):
     # ============ FRONTEND =============
     @app.route("/")
     def dashboard():
-        return send_from_directory("../examples", "node_dashboard.html")
+        return send_from_directory(frontend_dir, "index.html")
 
     # ============ TASKS API =============
     @app.route("/tasks", methods=["GET"])
