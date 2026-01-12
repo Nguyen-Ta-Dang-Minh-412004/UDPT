@@ -26,8 +26,8 @@ PickleDB Distributed Todo System được thiết kế để giúp người dùn
 
 ## Các thành viên nhóm 👥
 
-- **Nguyễn Thế Trường** - Mã số sinh viên 22010212
-- **Nguyễn Thế Trường An** - Mã số sinh viên 22010253
+- **Nguyễn Tá Đặng Minh** - Mã số sinh viên 22010072
+- **Lê Quang Huy** - Mã số sinh viên 22010428
 
 ## Cài đặt và sử dụng
 
@@ -35,7 +35,7 @@ PickleDB Distributed Todo System được thiết kế để giúp người dùn
     Clone repository về máy của bạn bằng lệnh sau:
 
     ```bash
-    git clone https://github.com/truongnguyenthe/pickle_DB.git
+    git clone https://github.com/Nguyen-Ta-Dang-Minh-412004/UDPT.git
     ```
 
 2.  **Chuyển đến thư mục dự án**:  
